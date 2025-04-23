@@ -1,3 +1,4 @@
+// src/App.jsx
 const App = () => (
   <main>
     <div>
