@@ -1,0 +1,90 @@
+.
+├── eslint.config.js
+├── index.html
+├── LICENSE
+├── package.json
+├── pnpm-lock.yaml
+├── project-structure.txt
+├── public
+│   ├── images
+│   │   ├── arrow-down.svg
+│   │   ├── arrow-right.svg
+│   │   ├── bg.png
+│   │   ├── chat.png
+│   │   ├── client1.png
+│   │   ├── client2.png
+│   │   ├── client3.png
+│   │   ├── client4.png
+│   │   ├── client5.png
+│   │   ├── client6.png
+│   │   ├── code.svg
+│   │   ├── concepts.svg
+│   │   ├── designs.svg
+│   │   ├── devices.png
+│   │   ├── exp1.png
+│   │   ├── exp2.png
+│   │   ├── exp3.png
+│   │   ├── fav.png
+│   │   ├── fb.png
+│   │   ├── gold-star.png
+│   │   ├── ideas.svg
+│   │   ├── insta.png
+│   │   ├── jsm-logo.png
+│   │   ├── linkedin.png
+│   │   ├── logo1.png
+│   │   ├── logo2.png
+│   │   ├── logo3.png
+│   │   ├── logos
+│   │   │   ├── company-logo-10.png
+│   │   │   ├── company-logo-11.png
+│   │   │   ├── company-logo-1.png
+│   │   │   ├── company-logo-2.png
+│   │   │   ├── company-logo-3.png
+│   │   │   ├── company-logo-4.png
+│   │   │   ├── company-logo-5.png
+│   │   │   ├── company-logo-6.png
+│   │   │   ├── company-logo-7.png
+│   │   │   ├── company-logo-8.png
+│   │   │   ├── company-logo-9.png
+│   │   │   ├── git.svg
+│   │   │   ├── node.png
+│   │   │   ├── python.svg
+│   │   │   ├── react.png
+│   │   │   └── three.png
+│   │   ├── menu.svg
+│   │   ├── person.png
+│   │   ├── project1.png
+│   │   ├── project2.png
+│   │   ├── project3.png
+│   │   ├── readme-bottom.png
+│   │   ├── readme.png
+│   │   ├── screen.mp4
+│   │   ├── seo.png
+│   │   ├── star.png
+│   │   ├── textures
+│   │   │   └── mat1.png
+│   │   ├── time.png
+│   │   ├── x.png
+│   │   └── x.svg
+│   └── models
+│       ├── computer-optimized.glb
+│       ├── computer-optimized-transformed.glb
+│       ├── git-svg-transformed.glb
+│       ├── node-transformed.glb
+│       ├── optimized-room.glb
+│       ├── python-transformed.glb
+│       ├── react_logo-transformed.glb
+│       └── three.js-transformed.glb
+├── README.md
+├── src
+│   ├── App.jsx
+│   ├── components
+│   │   └── sections
+│   │       └── Hero.jsx
+│   ├── constants
+│   │   └── index.js
+│   ├── index.css
+│   └── main.jsx
+└── vite.config.js
+
+9 directories, 78 files
