@@ -1,14 +1,8 @@
+// src/components/sections/Hero.jsx
+import { words } from "../../constants/index.js";
+import Button from "../../components/Button.jsx";
+import HeroExperience from "../../components/HeroExperience.jsx";
 const Hero = () => {
-  const words = [
-    { text: "Ideas", imgPath: "/images/ideas.svg" },
-    { text: "Concepts", imgPath: "/images/concepts.svg" },
-    { text: "Designs", imgPath: "/images/designs.svg" },
-    { text: "Code", imgPath: "/images/code.svg" },
-    { text: "Ideas", imgPath: "/images/ideas.svg" },
-    { text: "Concepts", imgPath: "/images/concepts.svg" },
-    { text: "Designs", imgPath: "/images/designs.svg" },
-    { text: "Code", imgPath: "/images/code.svg" },
-  ];
   return (
     <section id="hero" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
@@ -45,14 +39,24 @@ const Hero = () => {
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I’m Yaroslav, a developer based in Croatia with a passion for
+              Hi, I’m Yaroslav, a developer based in Germany with a passion for
               code.
             </p>
+            <Button
+              text="See My Work"
+              className="md:w-80 md:h-16 w-60 h-12"
+              id="counter"
+            />
           </div>
         </header>
 
         {/* RIGHT: 3D Model or Visual */}
         <h1>hero right section</h1>
+        <figure>
+          <div className="hero-3d-layout">
+            <HeroExperience />
+          </div>
+        </figure>
       </div>
     </section>
   );
