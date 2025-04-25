@@ -51,7 +51,6 @@ const Hero = () => {
         </header>
 
         {/* RIGHT: 3D Model or Visual */}
-        <h1>hero right section</h1>
         <figure>
           <div className="hero-3d-layout">
             <HeroExperience />
