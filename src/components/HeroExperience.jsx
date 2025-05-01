@@ -2,7 +2,8 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useMediaQuery } from "react-responsive";
-import { Room } from "./sections/room.jsx";
+import { Room } from "./sections/Room.jsx";
+
 import HeroLights from "./HeroLights.jsx";
 const HeroExperience = () => {
   const isTablet = useMediaQuery({ maxWidth: 1024 });
@@ -12,7 +13,7 @@ const HeroExperience = () => {
       <OrbitControls
         enablePan={false}
         enableZoom={!isTablet}
-        autoRotate ={false}
+        autoRotate={false}
         autoRotateSpeed={0.4}
         autoRotateDelay={500}
         maxPolarAngle={Math.PI / 2}
@@ -22,9 +23,7 @@ const HeroExperience = () => {
       <group scale={isMobile ? 0.7 : 1} position={[0, -3, 0]}>
         <Room />
       </group>
-      
     </Canvas>
-    
   );
 };
 
