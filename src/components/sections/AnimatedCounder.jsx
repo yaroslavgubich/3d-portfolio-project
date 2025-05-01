@@ -11,34 +11,18 @@ const AnimatedCounder = () => {
       <div className="mx-auto grid-4-cols">
         {/* counter function  */}
         {counterItems.map((item) => (
-          <>
-            {/* small dynamic container for each value lable and suffix */}
-            
-            
-            
-            
-            <div className="bg-zinc-900 rounded-lg p-10 flex flex-col justify-center">
-                {/* container for each value and suffix */}
-              
-              
-              
-              
-              <div
-                key={counterItems.value}
-                className="counter-number text-white text-5xl weight-700 "
-              >
-
-
-
-
-                0{item.suffix}
-
-
-
-
-              </div>
+          <div className="bg-zinc-900 rounded-lg p-10 flex flex-col justify-center">
+            {/* container for each value and suffix */}
+            <div
+              id="number-suffix-container"
+              key={counterItems.value}
+              className="counter-number text-white text-5xl weight-700 "
+            >
+              {item.value}
+              {item.suffix}
             </div>
-          </>
+            <div id="label-container" className="text-white text-lg">{item.label}</div>
+          </div>
         ))}
 
         {/* counter end  */}
