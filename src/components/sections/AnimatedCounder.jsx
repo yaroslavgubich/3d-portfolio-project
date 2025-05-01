@@ -2,6 +2,8 @@
 import React from "react";
 import { counterItems } from "../../constants/index.js";
 
+import CountUp from "react-countup";
+
 const AnimatedCounder = () => {
   return (
     // big horisontal container
@@ -9,7 +11,6 @@ const AnimatedCounder = () => {
       {/* smaller container for rows */}
 
       <div className="mx-auto grid-4-cols">
-        {/* counter function  */}
         {counterItems.map((item) => (
           <div className="bg-zinc-900 rounded-lg p-10 flex flex-col justify-center">
             {/* container for each value and suffix */}
@@ -18,10 +19,12 @@ const AnimatedCounder = () => {
               key={counterItems.value}
               className="counter-number text-white text-5xl weight-700 "
             >
-              {item.value}
-              {item.suffix}
+              <CountUp suffix={item.suffix} end={item.value} />
+             
             </div>
-            <div id="label-container" className="text-white text-lg">{item.label}</div>
+            <div id="label-container" className="text-white text-lg">
+              {item.label}
+            </div>
           </div>
         ))}
 
