@@ -19,8 +19,7 @@ const AnimatedCounder = () => {
               key={counterItems.value}
               className="counter-number text-white text-5xl weight-700 "
             >
-              <CountUp suffix={item.suffix} end={item.value} />
-             
+              <CountUp end={item.value} suffix={item.suffix} />
             </div>
             <div id="label-container" className="text-white text-lg">
               {item.label}
