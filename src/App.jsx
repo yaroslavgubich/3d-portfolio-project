@@ -3,9 +3,11 @@
 import Hero from "./components/sections/Hero";
 import AnimatedCounter from "./components/sections/AnimatedCounder";
 import Showcase from "./components/sections/Showcase";
+import Navbar from "./components/Navbar";
 const App = () => (
   <main>
     <div>
+      <Navbar />
       <Hero />
       <Showcase />
       <AnimatedCounter />
