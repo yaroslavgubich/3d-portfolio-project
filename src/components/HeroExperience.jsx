@@ -1,52 +1,28 @@
 // src/components/HeroExperience.jsx
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { useMediaQuery } from "react-responsive";
+import { Room } from "./sections/Room.jsx";
 
+import HeroLights from "./HeroLights.jsx";
 const HeroExperience = () => {
-  const isTablet = false;
-
+  const isTablet = useMediaQuery({ maxWidth: 1024 });
+  const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
     <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
-      <ambientLight intensity={70} color="#1a1a40" />
-      <directionalLight position={[5, 5, 5]} intensity={4} />
-
-      {/* Lighthouse group */}
-      <group position={[0, -2, 0]}>
-        {/* Base platform */}
-        <mesh position={[0, -0.25, 0]}>
-          <cylinderGeometry args={[1.2, 1.2, 0.5, 16]} />
-          <meshStandardMaterial color="#666666" />
-        </mesh>
-
-        {/* Tower */}
-        <mesh position={[0, 2, 0]}>
-          <cylinderGeometry args={[0.7, 1, 4, 16]} />
-          <meshStandardMaterial color="#cccccc" />
-        </mesh>
-
-        {/* Light Room */}
-        <mesh position={[0, 4.3, 0]}>
-          <cylinderGeometry args={[0.6, 0.6, 0.6, 16]} />
-          <meshStandardMaterial
-            color="#ffcc00"
-            emissive="#ffcc00"
-            emissiveIntensity={1}
-          />
-        </mesh>
-
-        {/* Roof */}
-        <mesh position={[0, 4.9, 0]}>
-          <coneGeometry args={[0.8, 0.6, 16]} />
-          <meshStandardMaterial color="#a00000" />
-        </mesh>
-      </group>
-
-      {/* Orbit Controls */}
       <OrbitControls
         enablePan={false}
         enableZoom={!isTablet}
-        maxDistance={isTablet ? 10 : 20}
+        autoRotate={false}
+        autoRotateSpeed={0.4}
+        autoRotateDelay={500}
+        maxPolarAngle={Math.PI / 2}
+        minPolarAngle={Math.PI / 10}
       />
+      <HeroLights />
+      <group scale={isMobile ? 0.7 : 1} position={[0, -3, 0]}>
+        <Room />
+      </group>
     </Canvas>
   );
 };
