@@ -6,6 +6,7 @@ import Showcase from "./components/sections/Showcase";
 import Navbar from "./components/Navbar";
 import LogoSection from "./components/sections/LogoSection";
 import FeatureCards from "./components/sections/FeatureCards";
+import ExperienceSection from "./components/sections/ExperienceSection";
 const App = () => (
   <main>
     <div>
@@ -15,6 +16,7 @@ const App = () => (
       <AnimatedCounter />
       <LogoSection />
       <FeatureCards />
+      <ExperienceSection />
     </div>
   </main>
 );
